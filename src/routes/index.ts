@@ -1,11 +1,13 @@
 import Elysia from "elysia";
+import sql from "~/pg";
 // Besoin d'aide? NE DEMANDE pas encore à l'ia ou livio. 
 // Mais va lire la documentation!
 // https://elysiajs.com/integrations/cheat-sheet.html
 
 export default new Elysia()     
 
-    // exemples de routes
+    // exemples de routes à garder pour s'inspirer
+
     .get('/un-chemin', handle => {
         return 'Je renvoie du texte'
     })
@@ -26,7 +28,14 @@ export default new Elysia()
         return null;
     })
     // méthodes
-    .post('/event', handle => {
+    .get('/event', async handle => {
+        const response = await sql`SELECT ... FROM ...`
+        return response;
+        // ... méthode GET -> généralement pour demander des informations
+    })
+    .post('/event', async handle => {
+        const response = await sql`INSERT INTO ... (...) VAlUES (...)`
+        return response
         // ... méthode POST -> généralement pour créer
     })
     .patch('/event', handle => {
