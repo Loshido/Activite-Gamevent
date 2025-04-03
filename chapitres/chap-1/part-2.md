@@ -1,3 +1,6 @@
+[Revenir à la page principale](/README.md) ou
+[Revenir en arrière](./part-1.md)
+
 ## Docker
 
 On utilisera [Docker](https://www.docker.com) pour le deploiement de notre application et la mise en place de la base de données
@@ -25,6 +28,20 @@ Si le projet grandit, Docker permet de le mettre à l’échelle facilement, en 
 ---
 
 En résumé, Docker nous aide à sécuriser, organiser et déployer facilement notre projet, tout en assurant une meilleure gestion des services et des dépendances. 🚀
+
+### Concepts clés
+
+#### Image
+Une image Docker est comme un plan ou un modèle pour créer un conteneur. Elle contient tout ce dont une application a besoin pour s'exécuter : le code, les bibliothèques, les dépendances, et les paramètres de configuration.
+
+Imagine une image comme une recette de cuisine. Elle décrit exactement ce qu'il faut pour préparer un plat (conteneur).
+Conteneur Docker :
+
+
+#### Conteneur
+Un conteneur est une instance en cours d'exécution d'une image Docker. C'est comme un plat préparé à partir de la recette (image).
+
+Chaque conteneur est isolé des autres, ce qui signifie qu'il fonctionne de manière indépendante. Tu peux avoir plusieurs conteneurs exécutant différentes applications ou même la même application avec des configurations différentes.
 
 ### Installation
 

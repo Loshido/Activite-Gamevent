@@ -1,3 +1,6 @@
+[Revenir à la page principale](/README.md) ou
+[Revenir en arrière](./part-2.md)
+
 ## Serveur Web
 
 ![schéma](../assets/chap-1-schema-grossier.png)
